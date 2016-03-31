@@ -3,13 +3,11 @@ class Endroit < ActiveRecord::Base
 	after_validation :geocode
 	belongs_to :user
 
-	# def tableauheure
-	# 	forecast = ForecastIO.forecast(latitude, longitude)
-	# 	tabheure = []
-	# 	(1..48).each do |i|
-	# 		tabheure << forecast.hourly.data[i].windSpeed
-	# 	end
-	# 	tabh
-	# end
+	def windspeed
+		ForecastIO.forecast(self.latitude, self.longitude).currently.windSpeed
+	end
+
+
 
 end
+	
