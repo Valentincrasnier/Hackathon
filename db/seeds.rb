@@ -6,6 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+
 Sport.create(name: "Athletics", image: "athletics1.jpg")
 Sport.create(name: "Basket", image: "basket1.jpg")
 Sport.create(name: "Bodybuilding", image: "bodybuilding1.jpg")
@@ -26,3 +27,31 @@ Sport.create(name: "Soccer", image: "soccer1.jpg")
 Sport.create(name: "Swimming", image: "swimming1.jpg")
 Sport.create(name: "Tennis", image: "tennis1.jpg")
 
+
+richard = User.create(
+    first_name: "Richard",
+    last_name: "Phonthibsvads",
+    birthday: DateTime.new(1981,03,11),
+    email: "richard@wcs.fr",
+    password: "12345678",)
+
+melanie = User.create(
+    first_name: "Mélanie",
+    last_name: "Gourpil",
+    birthday: DateTime.new(1992,12,07),
+    email: "melanie@wcs.fr",
+    password: "12345678",)
+
+benjamin = User.create(
+    first_name: "Benjamin",
+    last_name: "Lebas",
+    birthday: DateTime.new(1989,01,24),
+    email: "benjamin@wcs.fr",
+    password: "12345678",)
+
+valentin = User.create(
+    first_name: "Valentin",
+    last_name: "Crasnier",
+    birthday: DateTime.new(1995,03,24),
+    email: "valentin@wcs.fr",
+    password: "12345678",)
