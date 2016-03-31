@@ -11,15 +11,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160331133617) do
-
-  create_table "sports", force: :cascade do |t|
-    t.string   "name"
-    t.string   "image"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 ActiveRecord::Schema.define(version: 20160331153354) do
 
   create_table "endroits", force: :cascade do |t|
@@ -33,6 +24,13 @@ ActiveRecord::Schema.define(version: 20160331153354) do
   end
 
   add_index "endroits", ["user_id"], name: "index_endroits_on_user_id"
+
+  create_table "sports", force: :cascade do |t|
+    t.string   "name"
+    t.string   "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
