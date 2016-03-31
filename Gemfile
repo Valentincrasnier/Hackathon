@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 gem 'devise'
 
+gem 'geocoder'
+
+gem 'forecast_io'
+
 gem 'pry'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
