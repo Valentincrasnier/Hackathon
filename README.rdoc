@@ -1,3 +1,7 @@
+
+This deposit am following a hackathon for 36 hours , the goal was to build apps in the given Temp.
+
+
 == README
 
 This README would normally document whatever steps are necessary to get the
